@@ -1,0 +1,151 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 16, 2017, 9:58:27 PM
+    Author     : Sunny
+*/
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print
+{ 
+    html, body,section.content {
+    width: 210mm;
+    height: 297mm;
+  }
+    .visible-print  { display: inherit !important; }
+    .hidden-print   { display: none !important; }
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        float: left;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+    .col-md-11 {
+        width: 91.66666666666666%;
+    }
+    .col-md-10 {
+        width: 83.33333333333334%;
+    }
+    .col-md-9 {
+        width: 75%;
+    }
+    .col-md-8 {
+        width: 66.66666666666666%;
+    }
+    .col-md-7 {
+        width: 58.333333333333336%;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-5 {
+        width: 41.66666666666667%;
+    }
+    .col-md-4 {
+        width: 33.33333333333333%;
+    }
+    .col-md-3 {
+        width: 25%;
+    }
+    .col-md-2 {
+        width: 16.666666666666664%;
+    }
+    .col-md-1 {
+        width: 8.333333333333332%;
+    }
+    .col-md-offset-7 {
+    margin-left: 58.33333333%;
+}
+    .col-md-offset-8 {
+    margin-left: 66.66666667%;
+}
+    p, label, span, td {
+    line-height: 12px;
+    font-size: 12px; 
+}
+p{
+    padding-bottom: 0px;
+     
+}
+    strong {
+   
+    font-size: 13px;
+}
+
+.content {
+    min-height: 250px;
+    padding: 0px;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+}
+td {
+    padding-bottom: 2px;
+    padding-top: 2px;
+    line-height: 18px;
+}
+/*.user_details tr:nth-of-type(3), .user_details tr:nth-of-type(4){
+    
+    height:10px !important;
+}*/
+
+  button {
+    display: none !important;
+  }
+  input,
+  textarea,select {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    -webkit-appearance: none
+  }
+  .box-body, .insuranceForms{
+      padding-top:0px;
+  }
+.insurance_policy_detail_section > tbody > tr > td:nth-of-type(1){
+    height:10px;
+  }
+  .user_middle_content {
+    margin-top: 27px;
+ margin-bottom: 0px;
+}
+table.insurance_policy_detail_section .tr_insurance_policy, table.insurance_price_section, table.engine_left_section, table.engine_right_section{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.box.box-primary, .box-header.with-border{
+    border:none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.dynamic_middle_section  p {
+    margin-bottom: 0px;
+}
+strong{
+    line-height: 25px;
+}
+/*.header_logo{
+    height :70px;
+}*/
+.receipt_details{
+        margin-top: 25px;
+    margin-bottom: 25px;
+}
+.view .user_details tr:nth-of-type(3), .view .user_details tr:nth-of-type(4) {
+    height: 85px;
+}
+.user_details td {
+    padding-bottom: 9px;
+}
+.static_section strong{
+    line-height: 35px;
+}
+
+}

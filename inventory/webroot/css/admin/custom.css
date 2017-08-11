@@ -1,0 +1,121 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 11, 2017, 2:27:58 PM
+    Author     : pc
+*/
+
+.m-t-20{
+    
+    margin-top:20px;
+}
+.list_anchor{
+    display:inline;
+    margin-left: 10px;
+}
+p, label, span, td{
+    line-height: 20px;
+    font-size: 16px;
+}
+strong{
+    line-height:40px;
+    font-size: 18px;
+}
+.static_section strong{
+    
+    text-decoration: underline;
+}
+.sub_title{
+    margin-left: 20px;
+}
+.border_outer{
+    
+    border: 1px solid #000;
+}
+.m-r-30{  
+    
+    margin-right:30px;
+}
+.top_header_form label{
+    
+    margin-right:30px;
+}
+table{
+    width: 100%;
+}
+td{
+        padding-bottom: 7px;
+    padding-top: 7px;
+}
+/*.user_details{
+    //height: 540px;
+}*/
+.user_middle_content{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.dynamic_section .col-md-5{
+        border: 1px solid #000;
+    border-right: 0;
+     border-bottom: 0;
+}
+.dynamic_section .col-md-7{
+          border: 1px solid #000;
+   border-bottom: 0;
+}
+.dynamic_middle_section .col-md-12{
+    padding-top: 15px;
+    padding-bottom: 15px;
+     border: 1px solid #000;
+}
+.dynamic_middle_section .col-md-6{
+      border: 1px solid #000;
+       border-top: 0;
+       border-bottom: 0;
+}
+.dynamic_middle_section .col-md-6:last-of-type{
+           border-left: 0;
+      
+}
+.dynamic_section .col-md-5, .dynamic_section .col-md-7 {
+    padding-left: 0px;
+    padding-right: 0px;
+    
+}
+.insurance_policy_detail_section td, .user_details td, .insurance_price_section td, .receipt_details td, .user_middle_content{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.insurance_policy_detail_section tr:first-of-type, .user_details tr:first-of-type{
+   border-bottom: 1px solid #000;
+}
+.user_details td{
+    padding-bottom: 18px;
+}
+.insurance_price_section{
+     border-top: 1px solid #000;
+     
+   
+}
+.user_details tr:nth-of-type(3), .user_details tr:nth-of-type(4){
+    
+    height:133px;
+}
+.user_middle_content{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding:15px;
+}
+.second_list{
+    display:none;
+}
+.view .user_details tr:nth-of-type(3), .view .user_details tr:nth-of-type(4){
+    
+    height:91px;
+}
+.inline-block{
+    display:inline-block;
+}

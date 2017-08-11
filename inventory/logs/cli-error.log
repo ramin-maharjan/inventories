@@ -1,0 +1,697 @@
+2017-06-16 07:01:06 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails in C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 338
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(338): PDO->exec('DROP TABLE `use...')
+#1 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(327): Phinx\Db\Adapter\PdoAdapter->execute('DROP TABLE `use...')
+#2 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\CakeAdapter.php(446): Phinx\Db\Adapter\MysqlAdapter->dropTable('users')
+#3 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(177): Migrations\CakeAdapter->dropTable('users')
+#4 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\AbstractMigration.php(271): Phinx\Db\Table->drop()
+#5 C:\xampp\htdocs\cake3\config\Migrations\20170614104724_initial_db.php(101): Phinx\Migration\AbstractMigration->dropTable('users')
+#6 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(123): InitialDb->down()
+#7 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(InitialDb), 'down')
+#8 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(423): Phinx\Migration\Manager->executeMigration('default', Object(InitialDb), 'down')
+#9 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Rollback.php(109): Phinx\Migration\Manager->rollback('default', NULL, false)
+#10 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\ConfigurationTrait.php(165): Phinx\Console\Command\Rollback->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Command\Rollback.php(65): Migrations\Command\Rollback->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\cake3\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Rollback->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Rollback), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\Shell.php(472): Migrations\Shell\MigrationsShell->main('migrations', 'rollback')
+#18 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#20 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#21 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#22 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#23 {main}
+
+
+2017-06-16 07:02:34 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails in C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 338
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(338): PDO->exec('DROP TABLE `use...')
+#1 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(327): Phinx\Db\Adapter\PdoAdapter->execute('DROP TABLE `use...')
+#2 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\CakeAdapter.php(446): Phinx\Db\Adapter\MysqlAdapter->dropTable('users')
+#3 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(177): Migrations\CakeAdapter->dropTable('users')
+#4 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\AbstractMigration.php(271): Phinx\Db\Table->drop()
+#5 C:\xampp\htdocs\cake3\config\Migrations\20170614104724_initial_db.php(101): Phinx\Migration\AbstractMigration->dropTable('users')
+#6 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(123): InitialDb->down()
+#7 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(InitialDb), 'down')
+#8 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(423): Phinx\Migration\Manager->executeMigration('default', Object(InitialDb), 'down')
+#9 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Rollback.php(109): Phinx\Migration\Manager->rollback('default', NULL, false)
+#10 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\ConfigurationTrait.php(165): Phinx\Console\Command\Rollback->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Command\Rollback.php(65): Migrations\Command\Rollback->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\cake3\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Rollback->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Rollback), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\Shell.php(472): Migrations\Shell\MigrationsShell->main('migrations', 'rollback')
+#18 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#20 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#21 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#22 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#23 {main}
+
+
+2017-06-16 09:33:54 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1072 Key column 'name' doesn't exist in table in C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 338
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(338): PDO->exec('CREATE TABLE `b...')
+#1 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(305): Phinx\Db\Adapter\PdoAdapter->execute('CREATE TABLE `b...')
+#2 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\CakeAdapter.php(423): Phinx\Db\Adapter\MysqlAdapter->createTable(Object(Phinx\Db\Table))
+#3 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(611): Migrations\CakeAdapter->createTable(Object(Phinx\Db\Table))
+#4 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(669): Phinx\Db\Table->create()
+#5 C:\xampp\htdocs\cake3\config\Migrations\20170614104724_initial_db.php(90): Phinx\Db\Table->save()
+#6 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(123): InitialDb->up()
+#7 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(InitialDb), 'up')
+#8 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(303): Phinx\Migration\Manager->executeMigration('default', Object(InitialDb), 'up')
+#9 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php(113): Phinx\Migration\Manager->migrate('default', NULL)
+#10 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\ConfigurationTrait.php(165): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Command\Migrate.php(64): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\cake3\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\Shell.php(472): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#18 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#20 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#21 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#22 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#23 {main}
+
+
+2017-06-16 10:23:30 Error: [PDOException] SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'username' in C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 338
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(338): PDO->exec('ALTER TABLE `us...')
+#1 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(408): Phinx\Db\Adapter\PdoAdapter->execute('ALTER TABLE `us...')
+#2 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\CakeAdapter.php(481): Phinx\Db\Adapter\MysqlAdapter->addColumn(Object(Phinx\Db\Table), Object(Phinx\Db\Table\Column))
+#3 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(630): Migrations\CakeAdapter->addColumn(Object(Phinx\Db\Table), Object(Phinx\Db\Table\Column))
+#4 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(667): Phinx\Db\Table->update()
+#5 C:\xampp\htdocs\cake3\config\Migrations\20170614104724_initial_db.php(58): Phinx\Db\Table->save()
+#6 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(123): InitialDb->up()
+#7 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(InitialDb), 'up')
+#8 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(303): Phinx\Migration\Manager->executeMigration('default', Object(InitialDb), 'up')
+#9 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php(113): Phinx\Migration\Manager->migrate('default', NULL)
+#10 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\ConfigurationTrait.php(165): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Command\Migrate.php(64): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\cake3\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\Shell.php(472): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#18 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#20 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#21 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#22 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#23 {main}
+
+
+2017-06-16 10:24:12 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1072 Key column 'name' doesn't exist in table in C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 338
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(338): PDO->exec('CREATE TABLE `b...')
+#1 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(305): Phinx\Db\Adapter\PdoAdapter->execute('CREATE TABLE `b...')
+#2 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\CakeAdapter.php(423): Phinx\Db\Adapter\MysqlAdapter->createTable(Object(Phinx\Db\Table))
+#3 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(611): Migrations\CakeAdapter->createTable(Object(Phinx\Db\Table))
+#4 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(669): Phinx\Db\Table->create()
+#5 C:\xampp\htdocs\cake3\config\Migrations\20170614104724_initial_db.php(90): Phinx\Db\Table->save()
+#6 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(123): InitialDb->up()
+#7 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(InitialDb), 'up')
+#8 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(303): Phinx\Migration\Manager->executeMigration('default', Object(InitialDb), 'up')
+#9 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php(113): Phinx\Migration\Manager->migrate('default', NULL)
+#10 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\ConfigurationTrait.php(165): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Command\Migrate.php(64): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\cake3\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\Shell.php(472): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#18 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#20 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#21 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#22 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#23 {main}
+
+
+2017-06-16 10:25:02 Error: [PDOException] SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'username' in C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 338
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(338): PDO->exec('ALTER TABLE `us...')
+#1 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(408): Phinx\Db\Adapter\PdoAdapter->execute('ALTER TABLE `us...')
+#2 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\CakeAdapter.php(481): Phinx\Db\Adapter\MysqlAdapter->addColumn(Object(Phinx\Db\Table), Object(Phinx\Db\Table\Column))
+#3 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(630): Migrations\CakeAdapter->addColumn(Object(Phinx\Db\Table), Object(Phinx\Db\Table\Column))
+#4 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(667): Phinx\Db\Table->update()
+#5 C:\xampp\htdocs\cake3\config\Migrations\20170614104724_initial_db.php(58): Phinx\Db\Table->save()
+#6 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(123): InitialDb->up()
+#7 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(InitialDb), 'up')
+#8 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(303): Phinx\Migration\Manager->executeMigration('default', Object(InitialDb), 'up')
+#9 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php(113): Phinx\Migration\Manager->migrate('default', NULL)
+#10 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\ConfigurationTrait.php(165): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Command\Migrate.php(64): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\cake3\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\Shell.php(472): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#18 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#20 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#21 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#22 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#23 {main}
+
+
+2017-06-16 10:25:24 Error: [InvalidArgumentException] An invalid column type "strings" was specified for column "title". in C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php on line 351
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\config\Migrations\20170614104724_initial_db.php(101): Phinx\Db\Table->addColumn('title', 'strings', Array)
+#1 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(123): InitialDb->up()
+#2 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(InitialDb), 'up')
+#3 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(303): Phinx\Migration\Manager->executeMigration('default', Object(InitialDb), 'up')
+#4 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php(113): Phinx\Migration\Manager->migrate('default', NULL)
+#5 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\ConfigurationTrait.php(165): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Command\Migrate.php(64): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\xampp\htdocs\cake3\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\Shell.php(472): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#13 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#15 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#16 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#17 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#18 {main}
+
+
+2017-06-16 10:26:11 Error: [PDOException] SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'username' in C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 338
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(338): PDO->exec('ALTER TABLE `us...')
+#1 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(408): Phinx\Db\Adapter\PdoAdapter->execute('ALTER TABLE `us...')
+#2 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\CakeAdapter.php(481): Phinx\Db\Adapter\MysqlAdapter->addColumn(Object(Phinx\Db\Table), Object(Phinx\Db\Table\Column))
+#3 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(630): Migrations\CakeAdapter->addColumn(Object(Phinx\Db\Table), Object(Phinx\Db\Table\Column))
+#4 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(667): Phinx\Db\Table->update()
+#5 C:\xampp\htdocs\cake3\config\Migrations\20170614104724_initial_db.php(58): Phinx\Db\Table->save()
+#6 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(123): InitialDb->up()
+#7 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(InitialDb), 'up')
+#8 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(303): Phinx\Migration\Manager->executeMigration('default', Object(InitialDb), 'up')
+#9 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php(113): Phinx\Migration\Manager->migrate('default', NULL)
+#10 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\ConfigurationTrait.php(165): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Command\Migrate.php(64): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\cake3\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\Shell.php(472): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#18 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#20 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#21 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#22 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#23 {main}
+
+
+2017-06-16 10:26:44 Error: [InvalidArgumentException] An invalid column type "strings" was specified for column "title". in C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php on line 351
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\config\Migrations\20170614104724_initial_db.php(120): Phinx\Db\Table->addColumn('title', 'strings', Array)
+#1 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(123): InitialDb->up()
+#2 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(InitialDb), 'up')
+#3 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(303): Phinx\Migration\Manager->executeMigration('default', Object(InitialDb), 'up')
+#4 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php(113): Phinx\Migration\Manager->migrate('default', NULL)
+#5 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\ConfigurationTrait.php(165): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Command\Migrate.php(64): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\xampp\htdocs\cake3\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\Shell.php(472): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#13 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#15 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#16 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#17 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#18 {main}
+
+
+2017-06-16 10:27:39 Error: [PDOException] SQLSTATE[HY000]: General error: 1005 Can't create table `cake3`.`#sql-3ef4_47` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 338
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(338): PDO->exec('ALTER TABLE `bo...')
+#1 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(684): Phinx\Db\Adapter\PdoAdapter->execute('ALTER TABLE `bo...')
+#2 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\CakeAdapter.php(604): Phinx\Db\Adapter\MysqlAdapter->addForeignKey(Object(Phinx\Db\Table), Object(Phinx\Db\Table\ForeignKey))
+#3 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(638): Migrations\CakeAdapter->addForeignKey(Object(Phinx\Db\Table), Object(Phinx\Db\Table\ForeignKey))
+#4 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(667): Phinx\Db\Table->update()
+#5 C:\xampp\htdocs\cake3\config\Migrations\20170614104724_initial_db.php(136): Phinx\Db\Table->save()
+#6 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(123): InitialDb->up()
+#7 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(InitialDb), 'up')
+#8 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(303): Phinx\Migration\Manager->executeMigration('default', Object(InitialDb), 'up')
+#9 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php(113): Phinx\Migration\Manager->migrate('default', NULL)
+#10 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\ConfigurationTrait.php(165): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Command\Migrate.php(64): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\cake3\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\Shell.php(472): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#18 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#20 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#21 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#22 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#23 {main}
+
+
+2017-06-16 10:30:50 Error: [PDOException] SQLSTATE[HY000]: General error: 1005 Can't create table `cake3`.`#sql-3ef4_60` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 338
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(338): PDO->exec('ALTER TABLE `bo...')
+#1 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(684): Phinx\Db\Adapter\PdoAdapter->execute('ALTER TABLE `bo...')
+#2 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\CakeAdapter.php(604): Phinx\Db\Adapter\MysqlAdapter->addForeignKey(Object(Phinx\Db\Table), Object(Phinx\Db\Table\ForeignKey))
+#3 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(638): Migrations\CakeAdapter->addForeignKey(Object(Phinx\Db\Table), Object(Phinx\Db\Table\ForeignKey))
+#4 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(667): Phinx\Db\Table->update()
+#5 C:\xampp\htdocs\cake3\config\Migrations\20170614104724_initial_db.php(136): Phinx\Db\Table->save()
+#6 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(123): InitialDb->up()
+#7 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(InitialDb), 'up')
+#8 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(303): Phinx\Migration\Manager->executeMigration('default', Object(InitialDb), 'up')
+#9 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php(113): Phinx\Migration\Manager->migrate('default', NULL)
+#10 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\ConfigurationTrait.php(165): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Command\Migrate.php(64): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\cake3\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\Shell.php(472): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#18 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#20 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#21 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#22 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#23 {main}
+
+
+2017-06-16 10:32:01 Error: [PDOException] SQLSTATE[HY000]: General error: 1005 Can't create table `cake3`.`#sql-3ef4_69` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 338
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(338): PDO->exec('ALTER TABLE `bo...')
+#1 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(684): Phinx\Db\Adapter\PdoAdapter->execute('ALTER TABLE `bo...')
+#2 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\CakeAdapter.php(604): Phinx\Db\Adapter\MysqlAdapter->addForeignKey(Object(Phinx\Db\Table), Object(Phinx\Db\Table\ForeignKey))
+#3 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(638): Migrations\CakeAdapter->addForeignKey(Object(Phinx\Db\Table), Object(Phinx\Db\Table\ForeignKey))
+#4 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(667): Phinx\Db\Table->update()
+#5 C:\xampp\htdocs\cake3\config\Migrations\20170614104724_initial_db.php(136): Phinx\Db\Table->save()
+#6 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(123): InitialDb->up()
+#7 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(InitialDb), 'up')
+#8 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(303): Phinx\Migration\Manager->executeMigration('default', Object(InitialDb), 'up')
+#9 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php(113): Phinx\Migration\Manager->migrate('default', NULL)
+#10 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\ConfigurationTrait.php(165): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Command\Migrate.php(64): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\cake3\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\Shell.php(472): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#18 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#20 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#21 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#22 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#23 {main}
+
+
+2017-06-16 10:48:38 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails in C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 338
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(338): PDO->exec('DROP TABLE `tag...')
+#1 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(327): Phinx\Db\Adapter\PdoAdapter->execute('DROP TABLE `tag...')
+#2 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\CakeAdapter.php(446): Phinx\Db\Adapter\MysqlAdapter->dropTable('tags')
+#3 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(177): Migrations\CakeAdapter->dropTable('tags')
+#4 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\AbstractMigration.php(271): Phinx\Db\Table->drop()
+#5 C:\xampp\htdocs\cake3\config\Migrations\20170614104724_initial_db.php(143): Phinx\Migration\AbstractMigration->dropTable('tags')
+#6 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(123): InitialDb->down()
+#7 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(InitialDb), 'down')
+#8 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(423): Phinx\Migration\Manager->executeMigration('default', Object(InitialDb), 'down')
+#9 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Rollback.php(109): Phinx\Migration\Manager->rollback('default', NULL, false)
+#10 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\ConfigurationTrait.php(165): Phinx\Console\Command\Rollback->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Command\Rollback.php(65): Migrations\Command\Rollback->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\cake3\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Rollback->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Rollback), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\Shell.php(472): Migrations\Shell\MigrationsShell->main('migrations', 'rollback')
+#18 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#20 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#21 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#22 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#23 {main}
+
+
+2017-06-16 10:49:59 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'cake3.bookmarks' in C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 338
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(338): PDO->exec('DROP TABLE `boo...')
+#1 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(327): Phinx\Db\Adapter\PdoAdapter->execute('DROP TABLE `boo...')
+#2 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\CakeAdapter.php(446): Phinx\Db\Adapter\MysqlAdapter->dropTable('bookmarks')
+#3 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(177): Migrations\CakeAdapter->dropTable('bookmarks')
+#4 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\AbstractMigration.php(271): Phinx\Db\Table->drop()
+#5 C:\xampp\htdocs\cake3\config\Migrations\20170614104724_initial_db.php(138): Phinx\Migration\AbstractMigration->dropTable('bookmarks')
+#6 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(123): InitialDb->down()
+#7 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(InitialDb), 'down')
+#8 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(423): Phinx\Migration\Manager->executeMigration('default', Object(InitialDb), 'down')
+#9 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Rollback.php(109): Phinx\Migration\Manager->rollback('default', NULL, false)
+#10 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\ConfigurationTrait.php(165): Phinx\Console\Command\Rollback->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Command\Rollback.php(65): Migrations\Command\Rollback->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\cake3\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Rollback->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Rollback), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\Shell.php(472): Migrations\Shell\MigrationsShell->main('migrations', 'rollback')
+#18 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#20 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#21 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#22 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#23 {main}
+
+
+2017-06-16 10:50:20 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'cake3.users' in C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 338
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(338): PDO->exec('DROP TABLE `use...')
+#1 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(327): Phinx\Db\Adapter\PdoAdapter->execute('DROP TABLE `use...')
+#2 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\CakeAdapter.php(446): Phinx\Db\Adapter\MysqlAdapter->dropTable('users')
+#3 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(177): Migrations\CakeAdapter->dropTable('users')
+#4 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\AbstractMigration.php(271): Phinx\Db\Table->drop()
+#5 C:\xampp\htdocs\cake3\config\Migrations\20170614104724_initial_db.php(140): Phinx\Migration\AbstractMigration->dropTable('users')
+#6 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(123): InitialDb->down()
+#7 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(InitialDb), 'down')
+#8 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(423): Phinx\Migration\Manager->executeMigration('default', Object(InitialDb), 'down')
+#9 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Rollback.php(109): Phinx\Migration\Manager->rollback('default', NULL, false)
+#10 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\ConfigurationTrait.php(165): Phinx\Console\Command\Rollback->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Command\Rollback.php(65): Migrations\Command\Rollback->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\cake3\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Rollback->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Rollback), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\Shell.php(472): Migrations\Shell\MigrationsShell->main('migrations', 'rollback')
+#18 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#20 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#21 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#22 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#23 {main}
+
+
+2017-06-16 10:51:20 Error: [PDOException] SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'id' in C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 338
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(338): PDO->exec('ALTER TABLE `bo...')
+#1 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(408): Phinx\Db\Adapter\PdoAdapter->execute('ALTER TABLE `bo...')
+#2 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\CakeAdapter.php(481): Phinx\Db\Adapter\MysqlAdapter->addColumn(Object(Phinx\Db\Table), Object(Phinx\Db\Table\Column))
+#3 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(630): Migrations\CakeAdapter->addColumn(Object(Phinx\Db\Table), Object(Phinx\Db\Table\Column))
+#4 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(667): Phinx\Db\Table->update()
+#5 C:\xampp\htdocs\cake3\config\Migrations\20170614104724_initial_db.php(129): Phinx\Db\Table->save()
+#6 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(123): InitialDb->up()
+#7 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(InitialDb), 'up')
+#8 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(303): Phinx\Migration\Manager->executeMigration('default', Object(InitialDb), 'up')
+#9 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php(113): Phinx\Migration\Manager->migrate('default', NULL)
+#10 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\ConfigurationTrait.php(165): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Command\Migrate.php(64): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\cake3\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\Shell.php(472): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#18 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#20 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#21 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#22 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#23 {main}
+
+
+2017-06-16 10:52:28 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails in C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 338
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(338): PDO->exec('DROP TABLE `use...')
+#1 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(327): Phinx\Db\Adapter\PdoAdapter->execute('DROP TABLE `use...')
+#2 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\CakeAdapter.php(446): Phinx\Db\Adapter\MysqlAdapter->dropTable('users')
+#3 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(177): Migrations\CakeAdapter->dropTable('users')
+#4 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\AbstractMigration.php(271): Phinx\Db\Table->drop()
+#5 C:\xampp\htdocs\cake3\config\Migrations\20170614104724_initial_db.php(139): Phinx\Migration\AbstractMigration->dropTable('users')
+#6 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(123): InitialDb->down()
+#7 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(InitialDb), 'down')
+#8 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(423): Phinx\Migration\Manager->executeMigration('default', Object(InitialDb), 'down')
+#9 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Rollback.php(109): Phinx\Migration\Manager->rollback('default', NULL, false)
+#10 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\ConfigurationTrait.php(165): Phinx\Console\Command\Rollback->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Command\Rollback.php(65): Migrations\Command\Rollback->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\cake3\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Rollback->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Rollback), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\Shell.php(472): Migrations\Shell\MigrationsShell->main('migrations', 'rollback')
+#18 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#20 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#21 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#22 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#23 {main}
+
+
+2017-06-16 10:54:29 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails in C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 338
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(338): PDO->exec('DROP TABLE `boo...')
+#1 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(327): Phinx\Db\Adapter\PdoAdapter->execute('DROP TABLE `boo...')
+#2 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\CakeAdapter.php(446): Phinx\Db\Adapter\MysqlAdapter->dropTable('bookmarks')
+#3 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(177): Migrations\CakeAdapter->dropTable('bookmarks')
+#4 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\AbstractMigration.php(271): Phinx\Db\Table->drop()
+#5 C:\xampp\htdocs\cake3\config\Migrations\20170614104724_initial_db.php(144): Phinx\Migration\AbstractMigration->dropTable('bookmarks')
+#6 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(123): InitialDb->down()
+#7 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(InitialDb), 'down')
+#8 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(423): Phinx\Migration\Manager->executeMigration('default', Object(InitialDb), 'down')
+#9 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Rollback.php(109): Phinx\Migration\Manager->rollback('default', NULL, false)
+#10 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\ConfigurationTrait.php(165): Phinx\Console\Command\Rollback->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Command\Rollback.php(65): Migrations\Command\Rollback->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\cake3\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Rollback->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Rollback), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\Shell.php(472): Migrations\Shell\MigrationsShell->main('migrations', 'rollback')
+#18 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#20 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#21 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#22 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#23 {main}
+
+
+2017-06-16 11:01:19 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails in C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 338
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(338): PDO->exec('DROP TABLE `use...')
+#1 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(327): Phinx\Db\Adapter\PdoAdapter->execute('DROP TABLE `use...')
+#2 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\CakeAdapter.php(446): Phinx\Db\Adapter\MysqlAdapter->dropTable('users')
+#3 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(177): Migrations\CakeAdapter->dropTable('users')
+#4 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\AbstractMigration.php(271): Phinx\Db\Table->drop()
+#5 C:\xampp\htdocs\cake3\config\Migrations\20170614104724_initial_db.php(138): Phinx\Migration\AbstractMigration->dropTable('users')
+#6 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(123): InitialDb->down()
+#7 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(InitialDb), 'down')
+#8 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(423): Phinx\Migration\Manager->executeMigration('default', Object(InitialDb), 'down')
+#9 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Rollback.php(109): Phinx\Migration\Manager->rollback('default', NULL, false)
+#10 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\ConfigurationTrait.php(165): Phinx\Console\Command\Rollback->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Command\Rollback.php(65): Migrations\Command\Rollback->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\cake3\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Rollback->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Rollback), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\Shell.php(472): Migrations\Shell\MigrationsShell->main('migrations', 'rollback')
+#18 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#20 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#21 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#22 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#23 {main}
+
+
+2017-06-16 11:03:21 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails in C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 338
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(338): PDO->exec('DROP TABLE `use...')
+#1 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(327): Phinx\Db\Adapter\PdoAdapter->execute('DROP TABLE `use...')
+#2 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\CakeAdapter.php(446): Phinx\Db\Adapter\MysqlAdapter->dropTable('users')
+#3 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(177): Migrations\CakeAdapter->dropTable('users')
+#4 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\AbstractMigration.php(271): Phinx\Db\Table->drop()
+#5 C:\xampp\htdocs\cake3\config\Migrations\20170614104724_initial_db.php(138): Phinx\Migration\AbstractMigration->dropTable('users')
+#6 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(123): InitialDb->down()
+#7 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(InitialDb), 'down')
+#8 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(423): Phinx\Migration\Manager->executeMigration('default', Object(InitialDb), 'down')
+#9 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Rollback.php(109): Phinx\Migration\Manager->rollback('default', NULL, false)
+#10 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\ConfigurationTrait.php(165): Phinx\Console\Command\Rollback->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Command\Rollback.php(65): Migrations\Command\Rollback->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\cake3\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Rollback->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Rollback), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\Shell.php(472): Migrations\Shell\MigrationsShell->main('migrations', 'rollback')
+#18 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#20 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#21 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#22 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#23 {main}
+
+
+2017-06-16 11:04:40 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails in C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 338
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(338): PDO->exec('DROP TABLE `use...')
+#1 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(327): Phinx\Db\Adapter\PdoAdapter->execute('DROP TABLE `use...')
+#2 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\CakeAdapter.php(446): Phinx\Db\Adapter\MysqlAdapter->dropTable('users')
+#3 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(177): Migrations\CakeAdapter->dropTable('users')
+#4 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\AbstractMigration.php(271): Phinx\Db\Table->drop()
+#5 C:\xampp\htdocs\cake3\config\Migrations\20170614104724_initial_db.php(132): Phinx\Migration\AbstractMigration->dropTable('users')
+#6 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(123): InitialDb->down()
+#7 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(InitialDb), 'down')
+#8 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(423): Phinx\Migration\Manager->executeMigration('default', Object(InitialDb), 'down')
+#9 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Rollback.php(109): Phinx\Migration\Manager->rollback('default', NULL, false)
+#10 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\ConfigurationTrait.php(165): Phinx\Console\Command\Rollback->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Command\Rollback.php(65): Migrations\Command\Rollback->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\cake3\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Rollback->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Rollback), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\Shell.php(472): Migrations\Shell\MigrationsShell->main('migrations', 'rollback')
+#18 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#20 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#21 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#22 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#23 {main}
+
+
+2017-06-16 11:05:02 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails in C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 338
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(338): PDO->exec('DROP TABLE `use...')
+#1 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(327): Phinx\Db\Adapter\PdoAdapter->execute('DROP TABLE `use...')
+#2 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\CakeAdapter.php(446): Phinx\Db\Adapter\MysqlAdapter->dropTable('users')
+#3 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(177): Migrations\CakeAdapter->dropTable('users')
+#4 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\AbstractMigration.php(271): Phinx\Db\Table->drop()
+#5 C:\xampp\htdocs\cake3\config\Migrations\20170614104724_initial_db.php(132): Phinx\Migration\AbstractMigration->dropTable('users')
+#6 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(123): InitialDb->down()
+#7 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(InitialDb), 'down')
+#8 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(423): Phinx\Migration\Manager->executeMigration('default', Object(InitialDb), 'down')
+#9 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Rollback.php(109): Phinx\Migration\Manager->rollback('default', NULL, false)
+#10 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\ConfigurationTrait.php(165): Phinx\Console\Command\Rollback->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Command\Rollback.php(65): Migrations\Command\Rollback->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\cake3\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Rollback->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Rollback), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\Shell.php(472): Migrations\Shell\MigrationsShell->main('migrations', 'rollback')
+#18 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#20 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#21 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#22 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#23 {main}
+
+
+2017-06-16 11:05:39 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails in C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 338
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(338): PDO->exec('DROP TABLE `use...')
+#1 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(327): Phinx\Db\Adapter\PdoAdapter->execute('DROP TABLE `use...')
+#2 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\CakeAdapter.php(446): Phinx\Db\Adapter\MysqlAdapter->dropTable('users')
+#3 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(177): Migrations\CakeAdapter->dropTable('users')
+#4 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\AbstractMigration.php(271): Phinx\Db\Table->drop()
+#5 C:\xampp\htdocs\cake3\config\Migrations\20170614104724_initial_db.php(132): Phinx\Migration\AbstractMigration->dropTable('users')
+#6 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(123): InitialDb->down()
+#7 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(InitialDb), 'down')
+#8 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(423): Phinx\Migration\Manager->executeMigration('default', Object(InitialDb), 'down')
+#9 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Rollback.php(109): Phinx\Migration\Manager->rollback('default', NULL, false)
+#10 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\ConfigurationTrait.php(165): Phinx\Console\Command\Rollback->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Command\Rollback.php(65): Migrations\Command\Rollback->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\cake3\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Rollback->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Rollback), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\Shell.php(472): Migrations\Shell\MigrationsShell->main('migrations', 'rollback')
+#18 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#20 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#21 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#22 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#23 {main}
+
+
+2017-06-16 11:11:00 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Cake" could not be found. in C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php on line 327
+Exception Attributes: array (
+  'class' => 'Cake',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(226): Cake\Console\ShellDispatcher->findShell('cake')
+#1 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2017-07-05 09:44:55 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Migration" could not be found. in C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php on line 327
+Exception Attributes: array (
+  'class' => 'Migration',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(226): Cake\Console\ShellDispatcher->findShell('migration')
+#1 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2017-07-06 05:51:10 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Create" could not be found. in C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php on line 327
+Exception Attributes: array (
+  'class' => 'Create',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(226): Cake\Console\ShellDispatcher->findShell('create')
+#1 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2017-07-06 05:54:16 Error: [PDOException] SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'status' in C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 338
+Stack Trace:
+#0 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(338): PDO->exec('ALTER TABLE `Us...')
+#1 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(408): Phinx\Db\Adapter\PdoAdapter->execute('ALTER TABLE `Us...')
+#2 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\CakeAdapter.php(481): Phinx\Db\Adapter\MysqlAdapter->addColumn(Object(Phinx\Db\Table), Object(Phinx\Db\Table\Column))
+#3 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(630): Migrations\CakeAdapter->addColumn(Object(Phinx\Db\Table), Object(Phinx\Db\Table\Column))
+#4 C:\xampp\htdocs\cake3\config\Migrations\20170706055147_create_users_alter_table.php(35): Phinx\Db\Table->update()
+#5 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(120): CreateUsersAlterTable->change()
+#6 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(CreateUsersAlterTable), 'up')
+#7 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(303): Phinx\Migration\Manager->executeMigration('default', Object(CreateUsersAlterTable), 'up')
+#8 C:\xampp\htdocs\cake3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php(113): Phinx\Migration\Manager->migrate('default', NULL)
+#9 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\ConfigurationTrait.php(165): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Command\Migrate.php(64): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\cake3\vendor\symfony\console\Command\Command.php(264): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(835): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\cake3\vendor\symfony\console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\Shell.php(472): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#17 C:\xampp\htdocs\cake3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#18 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#19 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#20 C:\xampp\htdocs\cake3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#21 C:\xampp\htdocs\cake3\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#22 {main}
+
+
