@@ -89,6 +89,18 @@ class ProductsController extends AppController
         $orders = $this->Products->Orders->newEntity();
         $user = $this->Products->Users->newEntity();
         
+        
+        if ($this->request->is('post')) {
+            $user = $this->Products->Users->patchEntity($user, $this->request->data);
+           
+            if ($this->Products->Users->save($user)) {
+               
+                $this->Flash->customer(__('Congratulation ! You have been registered.'));
+
+                return $this->redirect(['controller'=>'Products','action' => 'home','prefix'=>false]);
+            }
+            //$this->Flash->error(__('The user could not be saved. Please, try again.'));
+        }
         if ($this->request->is('post')) {
             $orders = $this->Products->Orders->patchEntity($orders, $this->request->data);
 //           debug($orders);die();
@@ -202,10 +214,23 @@ $user = $this->Products->Users->newEntity();
                 ->select(['id','title','image']);
 //        ->combine('id','id');
 //         $productCategories=$productCategories->toArray();
-//         
-//         
-//           
-//
+    
+        
+      
+        
+        
+        if ($this->request->is('post')) {
+            $user = $this->Products->Users->patchEntity($user, $this->request->data);
+           
+            if ($this->Products->Users->save($user)) {
+               
+                $this->Flash->customer(__('Congratulation ! You have been registered.'));
+
+                return $this->redirect(['controller'=>'Products','action' => 'home','prefix'=>false]);
+            }
+            $this->Flash->error(__('The user could not be saved. Please, try again.'));
+        }
+        
 //       $productSubCategories = $this->Products->ProductSubCategories->find()
 //                ->select(['title'])
 //                ->where(['product_category_id in'=> $productCategories]);
@@ -234,6 +259,18 @@ $user = $this->Products->Users->newEntity();
         
         $productSubCategories=$productSubCategories->toArray();
         
+         if ($this->request->is('post')) {
+            $user = $this->Products->Users->patchEntity($user, $this->request->data);
+           
+            if ($this->Products->Users->save($user)) {
+               
+                $this->Flash->customer(__('Congratulation ! You have been registered.'));
+
+                return $this->redirect(['controller'=>'Products','action' => 'home','prefix'=>false]);
+            }
+            $this->Flash->error(__('The user could not be saved. Please, try again.'));
+        }
+        
         
 //        debug($productSubCategories);
 //        die();
@@ -253,7 +290,17 @@ $user = $this->Products->Users->newEntity();
             
         ];
        // $products = $this->paginate($this->Products);
+ if ($this->request->is('post')) {
+            $user = $this->Products->Users->patchEntity($user, $this->request->data);
+           
+            if ($this->Products->Users->save($user)) {
+               
+                $this->Flash->customer(__('Congratulation ! You have been registered.'));
 
+                return $this->redirect(['controller'=>'Products','action' => 'home','prefix'=>false]);
+            }
+            $this->Flash->error(__('The user could not be saved. Please, try again.'));
+        }
                 
         $electronics = $this->Products->find()
                 //->select(['id','title','image'])
@@ -279,7 +326,17 @@ $user = $this->Products->Users->newEntity();
             'limit' => 12
             
         ];
+ if ($this->request->is('post')) {
+            $user = $this->Products->Users->patchEntity($user, $this->request->data);
+           
+            if ($this->Products->Users->save($user)) {
+               
+                $this->Flash->customer(__('Congratulation ! You have been registered.'));
 
+                return $this->redirect(['controller'=>'Products','action' => 'home','prefix'=>false]);
+            }
+            $this->Flash->error(__('The user could not be saved. Please, try again.'));
+        }
         $clothings = $this->Products->find()
                 //->select(['id','title','image'])
                 ->where(['product_category_id'=>2]);
@@ -361,7 +418,17 @@ $user = $this->Products->Users->newEntity();
                         
                         $productname= isset($this->request->query['product_name']) ? $this->request->query['product_name'] : ''; 
                         $productID= isset($this->request->query['pid']) ? $this->request->query['pid'] : ''; 
-                     
+                      if ($this->request->is('post')) {
+            $user = $this->Products->Users->patchEntity($user, $this->request->data);
+           
+            if ($this->Products->Users->save($user)) {
+               
+                $this->Flash->customer(__('Congratulation ! You have been registered.'));
+
+                return $this->redirect(['controller'=>'Products','action' => 'home','prefix'=>false]);
+            }
+            $this->Flash->error(__('The user could not be saved. Please, try again.'));
+        }
                         
                    
             
